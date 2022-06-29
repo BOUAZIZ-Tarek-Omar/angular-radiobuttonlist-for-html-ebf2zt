@@ -1,0 +1,13 @@
+<div style="font-weight: bold">Payment Mode:</div>
+<label 
+  style="padding: 0 5px 0 20px"
+  *ngFor="let paymentMode of paymentModeList">
+  <input 
+    type="radio" 
+    name="paymentMode"
+    [(ngModel)]="paymentModeStatus" 
+    [value]="paymentMode.name"
+    (click)="paymentModeStatusAction(paymentMode.value)">
+    {{paymentMode.name}}
+</label>
+<pre>{{ paymentModeStatus }}</pre>
