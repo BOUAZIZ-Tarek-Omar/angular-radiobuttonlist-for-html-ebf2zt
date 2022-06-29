@@ -20,12 +20,12 @@ export class NgbdButtonsCheckbox {
   getPaymentModeList() {
     this.paymentModeList = [
       {
-        'checked': true,
+        'checked': false,
         'name': 'Cash',
         'value': 'cash',
       },
       {
-        'checked': false,
+        'checked': true,
         'name': 'Pay to Accounts',
         'value': 'accounts',
       }
